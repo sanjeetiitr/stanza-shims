@@ -1,7 +1,7 @@
-import * as RNRandomBytes from 'react-native-randombytes';
+import * as RNRandomBytes from 'expo-random';
 
 export * from './index.browser';
 
 export function randomBytes(size: number) {
-    return RNRandomBytes.randomBytes(size);
+    return RNRandomBytes.getRandomBytes(size);
 }
