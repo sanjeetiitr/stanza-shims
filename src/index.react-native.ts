@@ -2,6 +2,7 @@ import * as RNRandomBytes from 'expo-random';
 
 export * from './index.browser';
 
-export function randomBytes(size: number) {
-    return RNRandomBytes.getRandomBytes(size);
+export async function randomBytes(size: number) {
+    const buff = await RNRandomBytes.getRandomBytes(size);
+    return buff;
 }
