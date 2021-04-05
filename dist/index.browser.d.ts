@@ -14,4 +14,11 @@ declare const nativeWS: {
     readonly OPEN: number;
 };
 declare const nativeRTCPeerConnection: RTCPeerConnection | undefined;
-export { createHash, Hash, Hmac, nativeFetch as fetch, nativeWS as WebSocket, nativeRTCPeerConnection as RTCPeerConnection };
+export {
+    createHash,
+    Hash,
+    Hmac,
+    nativeFetch as fetch,
+    nativeWS as WebSocket,
+    nativeRTCPeerConnection as RTCPeerConnection
+};
